@@ -34,7 +34,7 @@ Please attempt the solve the problems described:
 What is the Bash command to discover the IP Address of `www.skillsunion.com`?
 
 ```sh
-# Answer here
+# ping www.skillsunion.com
 ```
 
 ---
@@ -44,7 +44,11 @@ What is the Bash command to discover the IP Address of `www.skillsunion.com`?
 What is the command to copy a directory from `~/my_project` to `/etc/projects`?
 
 ```sh
-# Answer here
+# cp -r ~/my_project /etc/projects
+
+
+**Note: It is assumed that my_project is the source directory to copied here. If the source directory is a sub directory in my_project, the command would be cp -r ~/my_project/src_dir /etc/projects where src_dir is the source directory
+
 ```
 ---
 
@@ -55,7 +59,8 @@ Implement a bash script that does the follow:
 1. Loop through the array and print each element.
 
 ```sh
-# Answer here
+# IFS=',' read -r -a arr <<< "one,two,three"
+# for i in "${arr[@]}"; do echo $i; done
 ```
 
 ---
@@ -71,6 +76,9 @@ Use [draw.io](draw.io) to draw a system architecture diagram as described below:
 - The database must not be connected to the internet gateway.
 
 Share the link to your image of diagram.
+
+https://drive.google.com/drive/folders/1x1w9gvrWlrjfRlKHmjwb6ixhEtMHSyFZ?usp=share_link
+
 
 ---
 
@@ -91,7 +99,11 @@ D - The principle of performance is not applied.
 *Q5B: What do you suggest could be done to improve the situation?*
 
 ```
-Answer here
+A5A: C - The principle of availability is not applied.
+
+A5B: To improve the situation, The geo redundancy of the application can enhanced by deploying the web application in multiple availability zones of AWS. Alan could also explore using multiple EC2 instances or implement auto scaling of EC2 and making use of Elastic load balancer to distribute the traffic.
+
+
 ```
 
 ---
