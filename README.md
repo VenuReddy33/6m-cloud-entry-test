@@ -59,7 +59,7 @@ Implement a bash script that does the follow:
 1. Loop through the array and print each element.
 
 ```sh
-# IFS=',' read -r -a arr <<< "one,two,three"
+# IFS=',' read  -a arr <<< "one,two,three"
 # for i in "${arr[@]}"; do echo $i; done
 ```
 
